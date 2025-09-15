@@ -1,0 +1,12 @@
+name: pulumi-project
+description: A minimal AWS Python Pulumi program
+runtime:
+  name: python
+  options:
+    toolchain: uv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
+packages:
+  custom-resource-provider: ../pulumi-component@0.0.0

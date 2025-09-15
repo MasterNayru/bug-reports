@@ -1,0 +1,10 @@
+[project]
+name = "custom-component"
+version = "0.1.0"
+description = "Test component"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pulumi",
+    "pulumi-aws",
+]
