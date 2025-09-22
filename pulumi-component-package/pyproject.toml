@@ -5,6 +5,11 @@ description = "Test component"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "custom-component-module",
     "pulumi",
     "pulumi-aws",
+    "pydantic>=2.11.9",
 ]
+
+[tool.uv.sources]
+custom-component-module = { path = "../custom_component_module" }

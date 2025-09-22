@@ -3,10 +3,12 @@ name = "pulumi-project"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
+    "custom-component-module",
     "pulumi>=3.0.0,<4.0.0",
     "pulumi-aws>=7.0.0,<8.0.0",
     "pulumi-custom-resource-provider",
 ]
 
 [tool.uv.sources]
+custom-component-module = { path = "../custom_component_module" }
 pulumi-custom-resource-provider = { path = "sdks/custom-resource-provider" }

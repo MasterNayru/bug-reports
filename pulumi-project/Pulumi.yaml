@@ -1,4 +1,4 @@
-name: pulumi-project
+name: pulumi.project
 description: A minimal AWS Python Pulumi program
 runtime:
   name: python
@@ -9,4 +9,4 @@ config:
     value:
       pulumi:template: aws-python
 packages:
-  custom-resource-provider: ../pulumi-component@0.0.0
+  custom-resource-provider: ../pulumi-component-package@0.0.0

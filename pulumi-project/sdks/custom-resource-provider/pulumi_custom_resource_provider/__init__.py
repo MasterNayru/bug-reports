@@ -6,8 +6,11 @@ import builtins as _builtins
 from . import _utilities
 import typing
 # Export this package's modules as members:
-from .my_bucket import *
+from ._enums import *
+from .ec2_security_group import *
 from .provider import *
+from .vpc import *
+from ._inputs import *
 _utilities.register(
     resource_modules="""
 [
@@ -16,7 +19,8 @@ _utilities.register(
   "mod": "index",
   "fqn": "pulumi_custom_resource_provider",
   "classes": {
-   "custom-resource-provider:index:MyBucket": "MyBucket"
+   "custom-resource-provider:index:EC2SecurityGroup": "EC2SecurityGroup",
+   "custom-resource-provider:index:VPC": "VPC"
   }
  }
 ]
